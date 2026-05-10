@@ -1,0 +1,9 @@
+# Build-time artifacts (not committed)
+spec.json
+*.tmp
+.DS_Store
+
+# Runtime / verification detritus (never committed)
+node_modules/
+bun.lockb
+.bun/

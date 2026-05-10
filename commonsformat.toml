@@ -1,0 +1,18 @@
+commonsformat = "0.1"
+name = "cm2html"
+version = "0.1.0"
+description = """
+A general-purpose CommonMark v0.31.2 to HTML renderer. Takes a UTF-8 \
+Markdown string conforming to the CommonMark v0.31.2 spec and produces \
+a UTF-8 HTML string byte-equal to the upstream test suite's expected \
+output for the same input."""
+
+license = "CC-BY-SA-4.0"
+authors = [
+    { name = "hays-hutton", email = "hays@hayshutton.com" }
+]
+verifies = "./evals.toml"
+
+[[depends_on]]
+spec = "github.com/commonsformat/commonsformat-format"
+version = "^0.1.7"
